@@ -7,82 +7,90 @@
     <title>Connect Four!</title>
     <link rel="stylesheet" href="./style.css" media="screen" title="no title" charset="utf-8">
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
   </head>
   <body>
+    <div class="message">Relaxing Connect 4 <br>
+    <p id="submessage">
+      Go for it red player!
+    </p></div>
+    <div class="messageLeft"></div>
     <!-- Begin Game Board -->
     <div id="board">
 
       <!-- column 1 -->
       <div class="column" id="column1">
-      <div class="square" id="0">0</div>
-      <div class="square" id="1">1</div>
-      <div class="square" id="2">2</div>
-      <div class="square" id="3">3</div>
-      <div class="square" id="4">4</div>
-      <div class="square" id="5">5</div>
-      <div class="square" id="6">6</div>
+      <div class="square" id="0"></div>
+      <div class="square" id="1"></div>
+      <div class="square" id="2"></div>
+      <div class="square" id="3"></div>
+      <div class="square" id="4"></div>
+      <div class="square" id="5"></div>
+      <div class="square" id="6"></div>
     </div>
 
       <!-- column 2 -->
       <div class="column" id="column2">
-      <div class="square" id="7">7</div>
-      <div class="square" id="8">8</div>
-      <div class="square" id="9">9</div>
-      <div class="square" id="10">10</div>
-      <div class="square" id="11">11</div>
-      <div class="square" id="12">12</div>
-      <div class="square" id="13">13</div>
+      <div class="square" id="7"></div>
+      <div class="square" id="8"></div>
+      <div class="square" id="9"></div>
+      <div class="square" id="10"></div>
+      <div class="square" id="11"></div>
+      <div class="square" id="12"></div>
+      <div class="square" id="13"></div>
       </div>
       <!-- column 3 -->
       <div class="column" id="column3">
-      <div class="square" id="14">14</div>
-      <div class="square" id="15">15</div>
-      <div class="square" id="16">16</div>
-      <div class="square" id="17">17</div>
-      <div class="square" id="18">18</div>
-      <div class="square" id="19">19</div>
-      <div class="square" id="20">20</div>
+      <div class="square" id="14"></div>
+      <div class="square" id="15"></div>
+      <div class="square" id="16"></div>
+      <div class="square" id="17"></div>
+      <div class="square" id="18"></div>
+      <div class="square" id="19"></div>
+      <div class="square" id="20"></div>
       </div>
       <!-- column 4 -->
       <div class="column" id="column4">
 
-      <div class="square" id="21">21</div>
-      <div class="square" id="22">22</div>
-      <div class="square" id="23">23</div>
-      <div class="square" id="24">24</div>
-      <div class="square" id="25">25</div>
-      <div class="square" id="26">26</div>
-      <div class="square" id="27">27</div>
+      <div class="square" id="21"></div>
+      <div class="square" id="22"></div>
+      <div class="square" id="23"></div>
+      <div class="square" id="24"></div>
+      <div class="square" id="25"></div>
+      <div class="square" id="26"></div>
+      <div class="square" id="27"></div>
       </div>
       <!-- column 5 -->
       <div class="column" id="column5">
 
-      <div class="square" id="28">28</div>
-      <div class="square" id="29">29</div>
-      <div class="square" id="30">30</div>
-      <div class="square" id="31">31</div>
-      <div class="square" id="32">32</div>
-      <div class="square" id="33">33</div>
-      <div class="square" id="34">34</div>
+      <div class="square" id="28"></div>
+      <div class="square" id="29"></div>
+      <div class="square" id="30"></div>
+      <div class="square" id="31"></div>
+      <div class="square" id="32"></div>
+      <div class="square" id="33"></div>
+      <div class="square" id="34"></div>
       </div>
       <!-- column 6 -->
       <div class="column" id="column6">
 
-      <div class="square" id="35">35</div>
-      <div class="square" id="36">36</div>
-      <div class="square" id="37">37</div>
-      <div class="square" id="38">38</div>
-      <div class="square" id="39">39</div>
-      <div class="square" id="40">40</div>
-      <div class="square" id="41">41</div>
+      <div class="square" id="35"></div>
+      <div class="square" id="36"></div>
+      <div class="square" id="37"></div>
+      <div class="square" id="38"></div>
+      <div class="square" id="39"></div>
+      <div class="square" id="40"></div>
+      <div class="square" id="41"></div>
       </div>
       <!-- column 7 -->
 
 
     </div> <!-- End Game Board -->
     <!-- Base Element -->
-    <!-- <div class="base"></div> -->
-
+    <div class="base"></div>
+    <audio controls autoplay id="audio">
+      <source src="./sound.mp3" type="audio/mp3">
+    </audio>
 
 
     <script src="./main.js" charset="utf-8"></script>
