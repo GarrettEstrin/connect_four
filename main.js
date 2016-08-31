@@ -2,420 +2,587 @@
 
 $turn = true;
 
-// Variables for columns
-$cola = $('#column-a');
-$colb = $('#column-b');
-$colc = $('#column-c');
-$cold = $('#column-d');
-$cole = $('#column-e');
-$colf = $('#column-f');
-$colg = $('#column-g');
+// Variables for columnumns
+$column1 = $('#column1');
+$column2 = $('#column2');
+$column3 = $('#column3');
+$column4 = $('#column4');
+$column5 = $('#column5');
+$column6 = $('#column6');
+
+
 
 // Winning Logic
 var isThereAWinner = function(){
-  if(($('#a6').attr('class') == 'square red') && ($('#a5').attr('class') == 'square red') && ($('#a4').attr('class') == 'square red') && ($('#a3').attr('class') == 'square red')){
+  if(($('#0').attr('class') == 'square red') && ($('#7').attr('class') == 'square red') && ($('#14').attr('class') == 'square red') && ($('#21').attr('class') == 'square red')){
       console.log("Red is the winner");
-} else if (($('#a5').attr('class') == 'square red') && ($('#a4').attr('class') == 'square red') && ($('#a3').attr('class') == 'square red') && ($('#a2').attr('class') == 'square red')){
+} else if (($('#7').attr('class') == 'square red') && ($('#14').attr('class') == 'square red') && ($('#21').attr('class') == 'square red') && ($('#28').attr('class') == 'square red')){
+    console.log("Red is the winner");
+} else if (($('#14').attr('class') == 'square red') && ($('#21').attr('class') == 'square red') && ($('#28').attr('class') == 'square red') && ($('#35').attr('class') == 'square red')){
+    console.log("Red is the winner");
+    // Row 2
+} else if (($('#1').attr('class') == 'square red') && ($('#8').attr('class') == 'square red') && ($('#15').attr('class') == 'square red') && ($('#22').attr('class') == 'square red')){
+    console.log("Red is the winner");
+} else if (($('#8').attr('class') == 'square red') && ($('#15').attr('class') == 'square red') && ($('#22').attr('class') == 'square red') && ($('#29').attr('class') == 'square red')){
+    console.log("Red is the winner");
+} else if (($('#15').attr('class') == 'square red') && ($('#22').attr('class') == 'square red') && ($('#29').attr('class') == 'square red') && ($('#36').attr('class') == 'square red')){
     console.log("Red is the winner");
 }
+// Row 3
+ else if (($('#2').attr('class') == 'square red') && ($('#9').attr('class') == 'square red') && ($('#16').attr('class') == 'square red') && ($('#23').attr('class') == 'square red')){
+console.log("Red is the winner");
+} else if (($('#9').attr('class') == 'square red') && ($('#16').attr('class') == 'square red') && ($('#23').attr('class') == 'square red') && ($('#30').attr('class') == 'square red')){
+console.log("Red is the winner");
+} else if (($('#16').attr('class') == 'square red') && ($('#23').attr('class') == 'square red') && ($('#30').attr('class') == 'square red') && ($('#37').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+// Row 4
+ else if (($('#3').attr('class') == 'square red') && ($('#10').attr('class') == 'square red') && ($('#17').attr('class') == 'square red') && ($('#24').attr('class') == 'square red')){
+console.log("Red is the winner");
+} else if (($('#10').attr('class') == 'square red') && ($('#17').attr('class') == 'square red') && ($('#24').attr('class') == 'square red') && ($('#31').attr('class') == 'square red')){
+console.log("Red is the winner");
+} else if (($('#17').attr('class') == 'square red') && ($('#24').attr('class') == 'square red') && ($('#31').attr('class') == 'square red') && ($('#38').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+// Row 5
+ else if (($('#4').attr('class') == 'square red') && ($('#11').attr('class') == 'square red') && ($('#18').attr('class') == 'square red') && ($('#25').attr('class') == 'square red')){
+console.log("Red is the winner");
+} else if (($('#11').attr('class') == 'square red') && ($('#18').attr('class') == 'square red') && ($('#25').attr('class') == 'square red') && ($('#32').attr('class') == 'square red')){
+console.log("Red is the winner");
+} else if (($('#18').attr('class') == 'square red') && ($('#25').attr('class') == 'square red') && ($('#32').attr('class') == 'square red') && ($('#39').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+// Row 6
+ else if (($('#5').attr('class') == 'square red') && ($('#12').attr('class') == 'square red') && ($('#19').attr('class') == 'square red') && ($('#26').attr('class') == 'square red')){
+console.log("Red is the winner");
+} else if (($('#12').attr('class') == 'square red') && ($('#19').attr('class') == 'square red') && ($('#26').attr('class') == 'square red') && ($('#33').attr('class') == 'square red')){
+console.log("Red is the winner");
+} else if (($('#19').attr('class') == 'square red') && ($('#26').attr('class') == 'square red') && ($('#33').attr('class') == 'square red') && ($('#40').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+// Row 7
+ else if (($('#6').attr('class') == 'square red') && ($('#13').attr('class') == 'square red') && ($('#20').attr('class') == 'square red') && ($('#27').attr('class') == 'square red')){
+console.log("Red is the winner");
+} else if (($('#13').attr('class') == 'square red') && ($('#20').attr('class') == 'square red') && ($('#27').attr('class') == 'square red') && ($('#34').attr('class') == 'square red')){
+console.log("Red is the winner");
+} else if (($('#20').attr('class') == 'square red') && ($('#27').attr('class') == 'square red') && ($('#34').attr('class') == 'square red') && ($('#41').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+// Start Columns
+// Column 1
+else if (($('#0').attr('class') == 'square red') && ($('#1').attr('class') == 'square red') && ($('#2').attr('class') == 'square red') && ($('#3').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#1').attr('class') == 'square red') && ($('#2').attr('class') == 'square red') && ($('#3').attr('class') == 'square red') && ($('#4').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#2').attr('class') == 'square red') && ($('#3').attr('class') == 'square red') && ($('#4').attr('class') == 'square red') && ($('#5').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#3').attr('class') == 'square red') && ($('#4').attr('class') == 'square red') && ($('#5').attr('class') == 'square red') && ($('#6').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+// Column 2
+else if (($('#7').attr('class') == 'square red') && ($('#8').attr('class') == 'square red') && ($('#9').attr('class') == 'square red') && ($('#10').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#8').attr('class') == 'square red') && ($('#9').attr('class') == 'square red') && ($('#10').attr('class') == 'square red') && ($('#11').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#9').attr('class') == 'square red') && ($('#10').attr('class') == 'square red') && ($('#11').attr('class') == 'square red') && ($('#12').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#10').attr('class') == 'square red') && ($('#10').attr('class') == 'square red') && ($('#10').attr('class') == 'square red') && ($('#10').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+// Column 3
+else if (($('#14').attr('class') == 'square red') && ($('#15').attr('class') == 'square red') && ($('#16').attr('class') == 'square red') && ($('#17').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#15').attr('class') == 'square red') && ($('#16').attr('class') == 'square red') && ($('#17').attr('class') == 'square red') && ($('#18').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#16').attr('class') == 'square red') && ($('#17').attr('class') == 'square red') && ($('#18').attr('class') == 'square red') && ($('#19').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#17').attr('class') == 'square red') && ($('#18').attr('class') == 'square red') && ($('#19').attr('class') == 'square red') && ($('#20').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+// Column 4
+else if (($('#21').attr('class') == 'square red') && ($('#22').attr('class') == 'square red') && ($('#23').attr('class') == 'square red') && ($('#24').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#22').attr('class') == 'square red') && ($('#23').attr('class') == 'square red') && ($('#24').attr('class') == 'square red') && ($('#25').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#23').attr('class') == 'square red') && ($('#24').attr('class') == 'square red') && ($('#25').attr('class') == 'square red') && ($('#26').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#24').attr('class') == 'square red') && ($('#25').attr('class') == 'square red') && ($('#26').attr('class') == 'square red') && ($('#27').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+// Column 5
+else if (($('#28').attr('class') == 'square red') && ($('#29').attr('class') == 'square red') && ($('#30').attr('class') == 'square red') && ($('#31').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#29').attr('class') == 'square red') && ($('#30').attr('class') == 'square red') && ($('#31').attr('class') == 'square red') && ($('#32').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#30').attr('class') == 'square red') && ($('#31').attr('class') == 'square red') && ($('#32').attr('class') == 'square red') && ($('#33').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#31').attr('class') == 'square red') && ($('#32').attr('class') == 'square red') && ($('#33').attr('class') == 'square red') && ($('#34').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+// Column 6
+else if (($('#35').attr('class') == 'square red') && ($('#36').attr('class') == 'square red') && ($('#37').attr('class') == 'square red') && ($('#38').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#36').attr('class') == 'square red') && ($('#37').attr('class') == 'square red') && ($('#38').attr('class') == 'square red') && ($('#39').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#37').attr('class') == 'square red') && ($('#38').attr('class') == 'square red') && ($('#39').attr('class') == 'square red') && ($('#40').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+else if (($('#38').attr('class') == 'square red') && ($('#39').attr('class') == 'square red') && ($('#40').attr('class') == 'square red') && ($('#41').attr('class') == 'square red')){
+console.log("Red is the winner");
+}
+// columns
 }
 
 
-
-$cola.on('click', function(){
+$column1.on('click', function(){
   if ($turn){
-    if($('#a6').attr('class') == 'square'){
-    $('#a6').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#a5').attr('class') == 'square'){
-    $('#a5').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#a4').attr('class') == 'square'){
-    $('#a4').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#a3').attr('class') == 'square'){
-    $('#a3').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#a2').attr('class') == 'square'){
-    $('#a2').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else {
-    $('#a1').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  }
-  } else {
-    if($('#a6').attr('class') == 'square'){
-    $('#a6').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#a5').attr('class') == 'square'){
-    $('#a5').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#a4').attr('class') == 'square'){
-    $('#a4').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#a3').attr('class') == 'square'){
-    $('#a3').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#a2').attr('class') == 'square'){
-    $('#a2').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else {
-    $('#a1').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  }
+    // if red turn
+    if($('#6').attr('class') == 'square'){
+      $('#6').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#5').attr('class') == 'square'){
+      $('#5').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#4').attr('class') == 'square'){
+      $('#4').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#3').attr('class') == 'square'){
+      $('#3').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#2').attr('class') == 'square'){
+      $('#2').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#1').attr('class') == 'square'){
+      $('#1').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#0').attr('class') == 'square'){
+      $('#0').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else {
+      // do nothing
+    }}
+    else {
+      // if blue turn
+      if($('#6').attr('class') == 'square'){
+        $('#6').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#5').attr('class') == 'square'){
+        $('#5').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#4').attr('class') == 'square'){
+        $('#4').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#3').attr('class') == 'square'){
+        $('#3').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#2').attr('class') == 'square'){
+        $('#2').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#1').attr('class') == 'square'){
+        $('#1').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#0').attr('class') == 'square'){
+        $('#0').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else {
+        // do nothing
+      }
+    }
+    // End of turn if statement
 
-}
 })
 
-$colb.on('click', function(){
+// Click function for Column 2
+$column2.on('click', function(){
   if ($turn){
-    if($('#b6').attr('class') == 'square'){
-    $('#b6').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#b5').attr('class') == 'square'){
-    $('#b5').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#b4').attr('class') == 'square'){
-    $('#b4').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#b3').attr('class') == 'square'){
-    $('#b3').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#b2').attr('class') == 'square'){
-    $('#b2').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else {
-    $('#b1').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  }
-  } else {
-    if($('#b6').attr('class') == 'square'){
-    $('#b6').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#b5').attr('class') == 'square'){
-    $('#b5').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#b4').attr('class') == 'square'){
-    $('#b4').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#b3').attr('class') == 'square'){
-    $('#b3').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#b2').attr('class') == 'square'){
-    $('#b2').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else {
-    $('#b1').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  }
+    // if red turn
+    if($('#13').attr('class') == 'square'){
+      $('#13').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#12').attr('class') == 'square'){
+      $('#12').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#11').attr('class') == 'square'){
+      $('#11').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#10').attr('class') == 'square'){
+      $('#10').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#9').attr('class') == 'square'){
+      $('#9').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#8').attr('class') == 'square'){
+      $('#8').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#7').attr('class') == 'square'){
+      $('#7').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else {
+      // do nothing
+    }}
+    else {
+      // if blue turn
+      if($('#13').attr('class') == 'square'){
+        $('#13').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#12').attr('class') == 'square'){
+        $('#12').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#11').attr('class') == 'square'){
+        $('#11').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#10').attr('class') == 'square'){
+        $('#10').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#9').attr('class') == 'square'){
+        $('#9').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#8').attr('class') == 'square'){
+        $('#8').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#7').attr('class') == 'square'){
+        $('#7').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else {
+        // do nothing
+      }
+    }
+    // End of turn if statement
 
-}
+})
+// Click function for Column 3
+$column3.on('click', function(){
+  if ($turn){
+    // if red turn
+    if($('#20').attr('class') == 'square'){
+      $('#20').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#19').attr('class') == 'square'){
+      $('#19').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#18').attr('class') == 'square'){
+      $('#18').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#17').attr('class') == 'square'){
+      $('#17').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#16').attr('class') == 'square'){
+      $('#16').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#15').attr('class') == 'square'){
+      $('#15').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#14').attr('class') == 'square'){
+      $('#14').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else {
+      // do nothing
+    }}
+    else {
+      // if blue turn
+      if($('#20').attr('class') == 'square'){
+        $('#20').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#19').attr('class') == 'square'){
+        $('#19').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#18').attr('class') == 'square'){
+        $('#18').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#17').attr('class') == 'square'){
+        $('#17').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#16').attr('class') == 'square'){
+        $('#16').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#15').attr('class') == 'square'){
+        $('#15').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#14').attr('class') == 'square'){
+        $('#14').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else {
+        // do nothing
+      }
+    }
+    // End of turn if statement
+
+})
+// Click function for Column 4
+$column4.on('click', function(){
+  if ($turn){
+    // if red turn
+    if($('#27').attr('class') == 'square'){
+      $('#27').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#26').attr('class') == 'square'){
+      $('#26').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#25').attr('class') == 'square'){
+      $('#25').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#24').attr('class') == 'square'){
+      $('#24').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#23').attr('class') == 'square'){
+      $('#23').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#22').attr('class') == 'square'){
+      $('#22').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#21').attr('class') == 'square'){
+      $('#21').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else {
+      // do nothing
+    }}
+    else {
+      // if blue turn
+      if($('#27').attr('class') == 'square'){
+        $('#27').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#26').attr('class') == 'square'){
+        $('#26').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#25').attr('class') == 'square'){
+        $('#25').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#24').attr('class') == 'square'){
+        $('#24').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#23').attr('class') == 'square'){
+        $('#23').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#22').attr('class') == 'square'){
+        $('#22').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#21').attr('class') == 'square'){
+        $('#21').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else {
+        // do nothing
+      }
+    }
+    // End of turn if statement
+
+})
+// Click function for Column 5
+$column5.on('click', function(){
+  if ($turn){
+    // if red turn
+    if($('#34').attr('class') == 'square'){
+      $('#34').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#33').attr('class') == 'square'){
+      $('#33').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#32').attr('class') == 'square'){
+      $('#32').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#31').attr('class') == 'square'){
+      $('#31').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#30').attr('class') == 'square'){
+      $('#30').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#29').attr('class') == 'square'){
+      $('#29').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#28').attr('class') == 'square'){
+      $('#28').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else {
+      // do nothing
+    }}
+    else {
+      // if blue turn
+      if($('#34').attr('class') == 'square'){
+        $('#34').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#33').attr('class') == 'square'){
+        $('#33').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#32').attr('class') == 'square'){
+        $('#32').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#31').attr('class') == 'square'){
+        $('#31').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#30').attr('class') == 'square'){
+        $('#30').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#29').attr('class') == 'square'){
+        $('#29').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#28').attr('class') == 'square'){
+        $('#28').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else {
+        // do nothing
+      }
+    }
+    // End of turn if statement
+
+})
+// Click function for Column 6
+$column6.on('click', function(){
+  if ($turn){
+    // if red turn
+    if($('#41').attr('class') == 'square'){
+      $('#41').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#40').attr('class') == 'square'){
+      $('#40').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#39').attr('class') == 'square'){
+      $('#39').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#38').attr('class') == 'square'){
+      $('#38').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#37').attr('class') == 'square'){
+      $('#37').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#36').attr('class') == 'square'){
+      $('#36').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else if ($('#35').attr('class') == 'square'){
+      $('#35').addClass('red');
+      isThereAWinner();
+      $turn = false;
+    } else {
+      // do nothing
+    }}
+    else {
+      // if blue turn
+      if($('#41').attr('class') == 'square'){
+        $('#41').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#40').attr('class') == 'square'){
+        $('#40').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#39').attr('class') == 'square'){
+        $('#39').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#38').attr('class') == 'square'){
+        $('#38').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#37').attr('class') == 'square'){
+        $('#37').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#36').attr('class') == 'square'){
+        $('#36').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else if ($('#35').attr('class') == 'square'){
+        $('#35').addClass('blue');
+        isThereAWinner();
+        $turn = true;
+      } else {
+        // do nothing
+      }
+    }
+    // End of turn if statement
+
 })
 
-$colc.on('click', function(){
-  if ($turn){
-    if($('#c6').attr('class') == 'square'){
-    $('#c6').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#c5').attr('class') == 'square'){
-    $('#c5').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#c4').attr('class') == 'square'){
-    $('#c4').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#c3').attr('class') == 'square'){
-    $('#c3').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#c2').attr('class') == 'square'){
-    $('#c2').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else {
-    $('#c1').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  }
-  } else {
-    if($('#c6').attr('class') == 'square'){
-    $('#c6').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#c5').attr('class') == 'square'){
-    $('#c5').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#c4').attr('class') == 'square'){
-    $('#c4').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#c3').attr('class') == 'square'){
-    $('#c3').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#c2').attr('class') == 'square'){
-    $('#c2').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else {
-    $('#c1').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  }
-
-}
-})
-
-$cold.on('click', function(){
-  if ($turn){
-    if($('#d6').attr('class') == 'square'){
-    $('#d6').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#d5').attr('class') == 'square'){
-    $('#d5').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#d4').attr('class') == 'square'){
-    $('#d4').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#d3').attr('class') == 'square'){
-    $('#d3').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#d2').attr('class') == 'square'){
-    $('#d2').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else {
-    $('#d1').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  }
-  } else {
-    if($('#d6').attr('class') == 'square'){
-    $('#d6').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#d5').attr('class') == 'square'){
-    $('#d5').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#d4').attr('class') == 'square'){
-    $('#d4').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#d3').attr('class') == 'square'){
-    $('#d3').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#d2').attr('class') == 'square'){
-    $('#d2').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else {
-    $('#d1').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  }
-
-}
-})
-$cole.on('click', function(){
-  if ($turn){
-    if($('#e6').attr('class') == 'square'){
-    $('#e6').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#e5').attr('class') == 'square'){
-    $('#e5').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#e4').attr('class') == 'square'){
-    $('#e4').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#e3').attr('class') == 'square'){
-    $('#e3').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#e2').attr('class') == 'square'){
-    $('#e2').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else {
-    $('#e1').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  }
-  } else {
-    if($('#e6').attr('class') == 'square'){
-    $('#e6').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#e5').attr('class') == 'square'){
-    $('#e5').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#e4').attr('class') == 'square'){
-    $('#e4').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#e3').attr('class') == 'square'){
-    $('#e3').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#e2').attr('class') == 'square'){
-    $('#e2').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else {
-    $('#e1').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  }
-
-}
-})
-
-$colf.on('click', function(){
-  if ($turn){
-    if($('#f6').attr('class') == 'square'){
-    $('#f6').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#f5').attr('class') == 'square'){
-    $('#f5').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#f4').attr('class') == 'square'){
-    $('#f4').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#f3').attr('class') == 'square'){
-    $('#f3').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#f2').attr('class') == 'square'){
-    $('#f2').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else {
-    $('#f1').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  }
-  } else {
-    if($('#f6').attr('class') == 'square'){
-    $('#f6').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#f5').attr('class') == 'square'){
-    $('#f5').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#f4').attr('class') == 'square'){
-    $('#f4').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#f3').attr('class') == 'square'){
-    $('#f3').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#f2').attr('class') == 'square'){
-    $('#f2').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else {
-    $('#f1').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  }
-
-}
-})
-
-$colg.on('click', function(){
-  if ($turn){
-    if($('#g6').attr('class') == 'square'){
-    $('#g6').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#g5').attr('class') == 'square'){
-    $('#g5').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#g4').attr('class') == 'square'){
-    $('#g4').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#g3').attr('class') == 'square'){
-    $('#g3').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else if ($('#g2').attr('class') == 'square'){
-    $('#g2').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  } else {
-    $('#g1').addClass('red');
-    $turn = false;
-    isThereAWinner();
-  }
-  } else {
-    if($('#g6').attr('class') == 'square'){
-    $('#g6').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#g5').attr('class') == 'square'){
-    $('#g5').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#g4').attr('class') == 'square'){
-    $('#g4').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#g3').attr('class') == 'square'){
-    $('#g3').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else if ($('#g2').attr('class') == 'square'){
-    $('#g2').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  } else {
-    $('#g1').addClass('blue');
-    $turn = true;
-    isThereAWinner();
-  }
-
-}
-})
+// Variable to show turn
+$turn = true;
