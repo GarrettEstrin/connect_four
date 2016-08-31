@@ -20,7 +20,15 @@ var showTurn = function(){
   if($turn == false){
     $submessage.text('Go for it red player!')
   } else {$submessage.text("Blue player, you're up!")}
+};
+
+var resetGame = function(){
+  showTurn();
+  $('.square').removeClass('red blue');
+  showTurn();
+
 }
+
 
 
 
@@ -590,6 +598,7 @@ blueWins.push('x');
 
 
 $column1.on('click', function(){
+  ;
   if ($turn){
     // if red turn
     if($('#6').attr('class') == 'square'){
@@ -663,6 +672,7 @@ $column1.on('click', function(){
 
 // Click function for Column 2
 $column2.on('click', function(){
+  ;
   if ($turn){
     // if red turn
     if($('#13').attr('class') == 'square'){
@@ -735,6 +745,7 @@ $column2.on('click', function(){
 })
 // Click function for Column 3
 $column3.on('click', function(){
+  ;
   if ($turn){
     // if red turn
     if($('#20').attr('class') == 'square'){
@@ -807,6 +818,7 @@ $column3.on('click', function(){
 })
 // Click function for Column 4
 $column4.on('click', function(){
+  ;
   if ($turn){
     // if red turn
     if($('#27').attr('class') == 'square'){
@@ -879,6 +891,7 @@ $column4.on('click', function(){
 })
 // Click function for Column 5
 $column5.on('click', function(){
+  ;
   if ($turn){
     // if red turn
     if($('#34').attr('class') == 'square'){
@@ -951,6 +964,7 @@ $column5.on('click', function(){
 })
 // Click function for Column 6
 $column6.on('click', function(){
+  ;
   if ($turn){
     // if red turn
     if($('#41').attr('class') == 'square'){
@@ -1021,6 +1035,3 @@ $column6.on('click', function(){
     // End of turn if statement
 
 })
-
-// Variable to show turn
-$turn = true;
