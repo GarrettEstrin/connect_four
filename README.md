@@ -2,39 +2,35 @@
 
 ### Javascript-based, turn based strategy game, styled in a laid-back, relaxing way.
 
-A two player competitive strategy game, where users alternate turns, performing actions such as shooting, skating, passing and saving with the success of these actions based on number rolls in ranges unique to each type of hockey player.
-Game ends when each user has taken 30 turns or one user scores 5 goals.
+A two player, semi-competitive strategy game where you attempt to drop four of your colored tokens in a line, either horizontally, vertically or diagonally.
 
-<!-- Put picture here of gameplay -->
+![Sample of gameplay](./sample_image.tiff) fix this
 
 ### Controls
 
-Users control is entirely click based.  Each user will have their own control center that changes dynamically based on their options.
-In this control center available actions will appear when appropriate and will be replaced with a roll image to indicate a number needs to be rolled.
+Users control is entirely click based.  Each player will click the column they want to place their token in when it is there turn, as indicated in the message center.
 
 ## To Play
 
-Visit http://garrettestrin.github.io/hockey/ to play, or download a .zip of this repo and open index.html in your browser.
+Visit http://garrettestrin.github.io/connect_four/ to play, or download a .zip of this repo and open index.html in your browser.
 
 ### Development process
 
-Technologies used: HTML / CSS / Javscript + jQuery
+Technologies used: HTML / CSS / Javascript + jQuery
 
-All player and puck tracking is done with arrays in Javascript set to the size of the rink, with "0" representing where an element is not and "1" representing where an element is.  Functions are used based on user actions to "move" the "1" value around the array to indicate position of element.  Elements include the puck, team forwards and defensemen.  Arrays also exist to store player attributes such as the range that a player gets to roll in to determine how effective an action is.  The game is able to be played completely from the console without visual representation.
-With this implementation, the amount of players per team can be easily expanded and rules and attributes can be adjusted to tweak gameplay.
-HTML and CSS are used to create the visual representation and to give users a clean interface to interact with.
+Columns are set to listen for clicks, at which time, an evaluation will be run to decide what row the token should be placed.  After a token is placed, a function to see if a player has met requirements to win has been achieved yet.  If one has, the message center indicates the winner and welcomes players to play again.  A lifetime score board is styled to the right of the board to indicate how many games each player has won.
 
 ## User Stories
 
 As a user, I interact with the game with a visually pleasing and simple UI.
-As a user, I can pick up and play a simple game that is difficult to master.
+As a user, I can pick up and play a simple game that is relaxing to play.
 
 ## Future implementations
 
-Everything...
+Animations
+Fix turns after reset
 
 ## Feature Wish List
 
-* Really Bitchen Player animations!
+* Really Bitchen token animations!
 * Landing Screen
-* Network play
