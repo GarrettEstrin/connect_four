@@ -5,7 +5,7 @@ body {
   width: 800px;
   background-image: url('./island.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
 }
 
@@ -116,7 +116,7 @@ bottom: 858px;
   margin: 30px auto;
   position: relative;
   bottom: 710px;
-  left: 370px;
+  left: 430px;
 }
 
 .playerscore {
