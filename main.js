@@ -16,9 +16,14 @@ var $bottle = $('.messageLeft')
 var snd = new Audio("./drop.mp3");
 // Celebration sound effect
 var celebrate = new Audio("./celebration.mp3");
+// Variable to select submessage area
 var $submessage = $('#submessage');
+// Arrays to hold player wins after each game
 var redWins = [];
 var blueWins = [];
+// Variable to select score areas
+var $redScore = $('#redScore');
+var $blueScore = $('#blueScore');
 
 var showTurn = function(){
   if($turn == false){
@@ -37,6 +42,7 @@ var resetGame = function(){
 var redWinFunc = function(){
   $submessage.text('Red wins! Grab a beer to play again!');
   redWins.push('x');
+  addScoreRed();
   $bottle.on('click', function(){
   celebrate.play();
   resetGame();
@@ -46,12 +52,28 @@ var redWinFunc = function(){
 
 var blueWinFunc = function(){
   $submessage.text('Blue wins! Grab a beer to play again!');
-  redWins.push('x');
+  blueWins.push('x');
+  addScoreBlue();
   $bottle.on('click', function(){
   celebrate.play();
   resetGame();
   $bottle.off();
 })
+}
+
+// Function to add score to scoreboard
+var addScoreRed = function(){
+    $redScore.text('');
+  for(var i = 0; i < redWins.length; i++){
+    $redScore.append('X');
+  }
+}
+
+var addScoreBlue = function(){
+   $blueScore.text('');
+  for(var i = 0; i < blueWins.length; i++){
+    $blueScore.append('X');
+  }
 }
 
 

@@ -1,11 +1,11 @@
 /* Custom CSS by Garrett Estrin | Garrett.Estrin.com */
 
 body {
-  margin: -280px auto 0;
+  margin: -260px auto 0;
   width: 800px;
   background-image: url('./island.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
 }
 
@@ -107,7 +107,7 @@ bottom: 858px;
 .scoreboard {
   width: 400px;
   height:800px;
-  background-image: url('./sign.png');
+  background-image: url('./sign2.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -116,7 +116,7 @@ bottom: 858px;
   margin: 30px auto;
   position: relative;
   bottom: 710px;
-  left: 450px;
+  left: 370px;
 }
 
 .playerscore {
@@ -126,12 +126,17 @@ bottom: 858px;
   display:inline-block;
   text-align: center;
   -webkit-text-stroke: 1px white;
-  margin-top: -25px;
+  margin: 35px 5px 0 -30px;
+  font-family: 'Indie Flower', cursive;
 }
 
+
 #blueScore {
-  font-size: 50px;
-  margin: 0 15px 10px 15px;
+color: blue;
+}
+
+#redScore {
+color: red;
 }
 
 .stop-scrolling {
