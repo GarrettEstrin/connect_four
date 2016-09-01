@@ -2,7 +2,9 @@
 
 ### Javascript-based, turn based strategy game, styled in a laid-back, relaxing way.
 
-A two player, semi-competitive strategy game where you attempt to drop four of your colored tokens in a line, either horizontally, vertically or diagonally.
+A two player, semi-competitive strategy game where you attempt to drop four of your colored tokens in a line, either horizontally, vertically or diagonally.  
+
+All visual and audio elements are designed and implemented to promote relaxation and reduce stress.  These include tropical images, soothing beach noises and slow animations.
 
 ![Sample of gameplay](./sample_image.png)
 
