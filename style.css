@@ -1,19 +1,17 @@
 /* Custom CSS by Garrett Estrin | Garrett.Estrin.com */
 
 html {
+  background-image: url('./island.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-}
+  background-color: lightblue;
 
-.htmlBackground {
-    background-image: url('./island.jpg');
 }
 
 body {
   margin: -250px auto 0;
   width: 800px;
   display: none;
-
 }
 
 .fixbodymargin {

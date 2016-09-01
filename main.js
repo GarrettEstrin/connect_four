@@ -1,8 +1,8 @@
 // Custom JavaScript by Garrett Estrin | GarrettEstrin.com
-$('html').fadeIn(1000).addClass('htmlBackground');
+// Fades in all body elements
 $('body').fadeIn(2000);
 $turn = true;
-$message = $('.message');
+
 
 // Variables for columnumns
 $column1 = $('#column1');
@@ -11,7 +11,9 @@ $column3 = $('#column3');
 $column4 = $('#column4');
 $column5 = $('#column5');
 $column6 = $('#column6');
-
+// Variable to select message element
+$message = $('.message');
+// Variable to select the bottle
 var $bottle = $('.messageLeft')
 // Drop token sound effect
 var snd = new Audio("./drop.mp3");
@@ -28,6 +30,7 @@ var $blueScore = $('#blueScore');
 // Variable to select instructions
 var $instructions = $('.instructions')
 
+// To make instructions disappear and re-appear
 $instructions.on('click', function(){
 $(this).slideUp(1000);
 // fixBodyMargin();

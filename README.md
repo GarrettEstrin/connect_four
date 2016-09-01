@@ -31,10 +31,8 @@ As a user, I can pick up and play a simple game that is relaxing to play.
 
 ## Future implementations
 
-Animations
-
+Make code DRY - logic.
 
 ## Feature Wish List
 
 * Really Bitchen token animations!
-* Landing Screen
