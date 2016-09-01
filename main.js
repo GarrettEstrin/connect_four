@@ -1,5 +1,5 @@
 // Custom JavaScript by Garrett Estrin | GarrettEstrin.com
-$('body').fadeIn(1000);
+$('body').fadeIn(2000);
 $turn = true;
 $message = $('.message');
 
