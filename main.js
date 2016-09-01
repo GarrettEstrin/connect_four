@@ -10,8 +10,10 @@ $column3 = $('#column3');
 $column4 = $('#column4');
 $column5 = $('#column5');
 $column6 = $('#column6');
-
+// Drop token sound effect
 var snd = new Audio("./drop.mp3");
+// Celebration sound effect
+var celebrate = new Audio("./celebration.mp3");
 var $submessage = $('#submessage');
 var redWins = [];
 var blueWins = [];
@@ -38,560 +40,560 @@ var isThereAWinner = function(){
   snd.play();
   showTurn();
   if(($('#0').attr('class') == 'square red') && ($('#7').attr('class') == 'square red') && ($('#14').attr('class') == 'square red') && ($('#21').attr('class') == 'square red')){
-      $submessage.text('Red wins!');
+      $submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#7').attr('class') == 'square red') && ($('#14').attr('class') == 'square red') && ($('#21').attr('class') == 'square red') && ($('#28').attr('class') == 'square red')){
-    $submessage.text('Red wins!');
+    $submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#14').attr('class') == 'square red') && ($('#21').attr('class') == 'square red') && ($('#28').attr('class') == 'square red') && ($('#35').attr('class') == 'square red')){
-    $submessage.text('Red wins!');
+    $submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
     // Row 2
 } else if (($('#1').attr('class') == 'square red') && ($('#8').attr('class') == 'square red') && ($('#15').attr('class') == 'square red') && ($('#22').attr('class') == 'square red')){
-    $submessage.text('Red wins!');
+    $submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#8').attr('class') == 'square red') && ($('#15').attr('class') == 'square red') && ($('#22').attr('class') == 'square red') && ($('#29').attr('class') == 'square red')){
-    $submessage.text('Red wins!');
+    $submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#15').attr('class') == 'square red') && ($('#22').attr('class') == 'square red') && ($('#29').attr('class') == 'square red') && ($('#36').attr('class') == 'square red')){
-    $submessage.text('Red wins!');
+    $submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // Row 3
  else if (($('#2').attr('class') == 'square red') && ($('#9').attr('class') == 'square red') && ($('#16').attr('class') == 'square red') && ($('#23').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#9').attr('class') == 'square red') && ($('#16').attr('class') == 'square red') && ($('#23').attr('class') == 'square red') && ($('#30').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#16').attr('class') == 'square red') && ($('#23').attr('class') == 'square red') && ($('#30').attr('class') == 'square red') && ($('#37').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // Row 4
  else if (($('#3').attr('class') == 'square red') && ($('#10').attr('class') == 'square red') && ($('#17').attr('class') == 'square red') && ($('#24').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#10').attr('class') == 'square red') && ($('#17').attr('class') == 'square red') && ($('#24').attr('class') == 'square red') && ($('#31').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#17').attr('class') == 'square red') && ($('#24').attr('class') == 'square red') && ($('#31').attr('class') == 'square red') && ($('#38').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // Row 5
  else if (($('#4').attr('class') == 'square red') && ($('#11').attr('class') == 'square red') && ($('#18').attr('class') == 'square red') && ($('#25').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#11').attr('class') == 'square red') && ($('#18').attr('class') == 'square red') && ($('#25').attr('class') == 'square red') && ($('#32').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#18').attr('class') == 'square red') && ($('#25').attr('class') == 'square red') && ($('#32').attr('class') == 'square red') && ($('#39').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // Row 6
  else if (($('#5').attr('class') == 'square red') && ($('#12').attr('class') == 'square red') && ($('#19').attr('class') == 'square red') && ($('#26').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#12').attr('class') == 'square red') && ($('#19').attr('class') == 'square red') && ($('#26').attr('class') == 'square red') && ($('#33').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#19').attr('class') == 'square red') && ($('#26').attr('class') == 'square red') && ($('#33').attr('class') == 'square red') && ($('#40').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // Row 7
  else if (($('#6').attr('class') == 'square red') && ($('#13').attr('class') == 'square red') && ($('#20').attr('class') == 'square red') && ($('#27').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#13').attr('class') == 'square red') && ($('#20').attr('class') == 'square red') && ($('#27').attr('class') == 'square red') && ($('#34').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 } else if (($('#20').attr('class') == 'square red') && ($('#27').attr('class') == 'square red') && ($('#34').attr('class') == 'square red') && ($('#41').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // Start Columns
 // Column 1
 else if (($('#0').attr('class') == 'square red') && ($('#1').attr('class') == 'square red') && ($('#2').attr('class') == 'square red') && ($('#3').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#1').attr('class') == 'square red') && ($('#2').attr('class') == 'square red') && ($('#3').attr('class') == 'square red') && ($('#4').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#2').attr('class') == 'square red') && ($('#3').attr('class') == 'square red') && ($('#4').attr('class') == 'square red') && ($('#5').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#3').attr('class') == 'square red') && ($('#4').attr('class') == 'square red') && ($('#5').attr('class') == 'square red') && ($('#6').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // Column 2
 else if (($('#7').attr('class') == 'square red') && ($('#8').attr('class') == 'square red') && ($('#9').attr('class') == 'square red') && ($('#10').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#8').attr('class') == 'square red') && ($('#9').attr('class') == 'square red') && ($('#10').attr('class') == 'square red') && ($('#11').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#9').attr('class') == 'square red') && ($('#10').attr('class') == 'square red') && ($('#11').attr('class') == 'square red') && ($('#12').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#10').attr('class') == 'square red') && ($('#10').attr('class') == 'square red') && ($('#10').attr('class') == 'square red') && ($('#10').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // Column 3
 else if (($('#14').attr('class') == 'square red') && ($('#15').attr('class') == 'square red') && ($('#16').attr('class') == 'square red') && ($('#17').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#15').attr('class') == 'square red') && ($('#16').attr('class') == 'square red') && ($('#17').attr('class') == 'square red') && ($('#18').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#16').attr('class') == 'square red') && ($('#17').attr('class') == 'square red') && ($('#18').attr('class') == 'square red') && ($('#19').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#17').attr('class') == 'square red') && ($('#18').attr('class') == 'square red') && ($('#19').attr('class') == 'square red') && ($('#20').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // Column 4
 else if (($('#21').attr('class') == 'square red') && ($('#22').attr('class') == 'square red') && ($('#23').attr('class') == 'square red') && ($('#24').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#22').attr('class') == 'square red') && ($('#23').attr('class') == 'square red') && ($('#24').attr('class') == 'square red') && ($('#25').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#23').attr('class') == 'square red') && ($('#24').attr('class') == 'square red') && ($('#25').attr('class') == 'square red') && ($('#26').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#24').attr('class') == 'square red') && ($('#25').attr('class') == 'square red') && ($('#26').attr('class') == 'square red') && ($('#27').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // Column 5
 else if (($('#28').attr('class') == 'square red') && ($('#29').attr('class') == 'square red') && ($('#30').attr('class') == 'square red') && ($('#31').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#29').attr('class') == 'square red') && ($('#30').attr('class') == 'square red') && ($('#31').attr('class') == 'square red') && ($('#32').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#30').attr('class') == 'square red') && ($('#31').attr('class') == 'square red') && ($('#32').attr('class') == 'square red') && ($('#33').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#31').attr('class') == 'square red') && ($('#32').attr('class') == 'square red') && ($('#33').attr('class') == 'square red') && ($('#34').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // Column 6
 else if (($('#35').attr('class') == 'square red') && ($('#36').attr('class') == 'square red') && ($('#37').attr('class') == 'square red') && ($('#38').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#36').attr('class') == 'square red') && ($('#37').attr('class') == 'square red') && ($('#38').attr('class') == 'square red') && ($('#39').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#37').attr('class') == 'square red') && ($('#38').attr('class') == 'square red') && ($('#39').attr('class') == 'square red') && ($('#40').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#38').attr('class') == 'square red') && ($('#39').attr('class') == 'square red') && ($('#40').attr('class') == 'square red') && ($('#41').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // diagonal row 6
 else if (($('#20').attr('class') == 'square red') && ($('#26').attr('class') == 'square red') && ($('#32').attr('class') == 'square red') && ($('#38').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#13').attr('class') == 'square red') && ($('#19').attr('class') == 'square red') && ($('#25').attr('class') == 'square red') && ($('#31').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#6').attr('class') == 'square red') && ($('#12').attr('class') == 'square red') && ($('#18').attr('class') == 'square red') && ($('#24').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#41').attr('class') == 'square red') && ($('#33').attr('class') == 'square red') && ($('#25').attr('class') == 'square red') && ($('#17').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#34').attr('class') == 'square red') && ($('#26').attr('class') == 'square red') && ($('#18').attr('class') == 'square red') && ($('#10').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#27').attr('class') == 'square red') && ($('#19').attr('class') == 'square red') && ($('#11').attr('class') == 'square red') && ($('#3').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // diagonal row 5
 else if (($('#19').attr('class') == 'square red') && ($('#25').attr('class') == 'square red') && ($('#31').attr('class') == 'square red') && ($('#37').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#12').attr('class') == 'square red') && ($('#18').attr('class') == 'square red') && ($('#24').attr('class') == 'square red') && ($('#30').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#5').attr('class') == 'square red') && ($('#11').attr('class') == 'square red') && ($('#17').attr('class') == 'square red') && ($('#23').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#40').attr('class') == 'square red') && ($('#32').attr('class') == 'square red') && ($('#24').attr('class') == 'square red') && ($('#16').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#33').attr('class') == 'square red') && ($('#25').attr('class') == 'square red') && ($('#17').attr('class') == 'square red') && ($('#9').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#26').attr('class') == 'square red') && ($('#18').attr('class') == 'square red') && ($('#10').attr('class') == 'square red') && ($('#2').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // diagonal row 4
 else if (($('#18').attr('class') == 'square red') && ($('#24').attr('class') == 'square red') && ($('#30').attr('class') == 'square red') && ($('#36').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#11').attr('class') == 'square red') && ($('#17').attr('class') == 'square red') && ($('#23').attr('class') == 'square red') && ($('#29').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#4').attr('class') == 'square red') && ($('#10').attr('class') == 'square red') && ($('#16').attr('class') == 'square red') && ($('#22').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#38').attr('class') == 'square red') && ($('#30').attr('class') == 'square red') && ($('#22').attr('class') == 'square red') && ($('#15').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#32').attr('class') == 'square red') && ($('#24').attr('class') == 'square red') && ($('#16').attr('class') == 'square red') && ($('#8').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#25').attr('class') == 'square red') && ($('#17').attr('class') == 'square red') && ($('#9').attr('class') == 'square red') && ($('#1').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // diagonal row 3
 else if (($('#17').attr('class') == 'square red') && ($('#23').attr('class') == 'square red') && ($('#29').attr('class') == 'square red') && ($('#35').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#10').attr('class') == 'square red') && ($('#16').attr('class') == 'square red') && ($('#22').attr('class') == 'square red') && ($('#28').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#3').attr('class') == 'square red') && ($('#9').attr('class') == 'square red') && ($('#15').attr('class') == 'square red') && ($('#21').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#37').attr('class') == 'square red') && ($('#29').attr('class') == 'square red') && ($('#21').attr('class') == 'square red') && ($('#14').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#31').attr('class') == 'square red') && ($('#23').attr('class') == 'square red') && ($('#15').attr('class') == 'square red') && ($('#7').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 else if (($('#24').attr('class') == 'square red') && ($('#16').attr('class') == 'square red') && ($('#8').attr('class') == 'square red') && ($('#0').attr('class') == 'square red')){
-$submessage.text('Red wins!');
+$submessage.text('Red wins! Grab a beer to play again!');
 redWins.push('x');
 }
 // Start Blue win section
 else if (($('#0').attr('class') == 'square blue') && ($('#7').attr('class') == 'square blue') && ($('#14').attr('class') == 'square blue') && ($('#21').attr('class') == 'square blue')){
-    $submessage.text('Blue wins!');
+    $submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#7').attr('class') == 'square blue') && ($('#14').attr('class') == 'square blue') && ($('#21').attr('class') == 'square blue') && ($('#28').attr('class') == 'square blue')){
-  $submessage.text('Blue wins!');
+  $submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#14').attr('class') == 'square blue') && ($('#21').attr('class') == 'square blue') && ($('#28').attr('class') == 'square blue') && ($('#35').attr('class') == 'square blue')){
-  $submessage.text('Blue wins!');
+  $submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
   // Row 2
 } else if (($('#1').attr('class') == 'square blue') && ($('#8').attr('class') == 'square blue') && ($('#15').attr('class') == 'square blue') && ($('#22').attr('class') == 'square blue')){
-  $submessage.text('Blue wins!');
+  $submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#8').attr('class') == 'square blue') && ($('#15').attr('class') == 'square blue') && ($('#22').attr('class') == 'square blue') && ($('#29').attr('class') == 'square blue')){
-  $submessage.text('Blue wins!');
+  $submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#15').attr('class') == 'square blue') && ($('#22').attr('class') == 'square blue') && ($('#29').attr('class') == 'square blue') && ($('#36').attr('class') == 'square blue')){
-  $submessage.text('Blue wins!');
+  $submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // Row 3
 else if (($('#2').attr('class') == 'square blue') && ($('#9').attr('class') == 'square blue') && ($('#16').attr('class') == 'square blue') && ($('#23').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#9').attr('class') == 'square blue') && ($('#16').attr('class') == 'square blue') && ($('#23').attr('class') == 'square blue') && ($('#30').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#16').attr('class') == 'square blue') && ($('#23').attr('class') == 'square blue') && ($('#30').attr('class') == 'square blue') && ($('#37').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // Row 4
 else if (($('#3').attr('class') == 'square blue') && ($('#10').attr('class') == 'square blue') && ($('#17').attr('class') == 'square blue') && ($('#24').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#10').attr('class') == 'square blue') && ($('#17').attr('class') == 'square blue') && ($('#24').attr('class') == 'square blue') && ($('#31').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#17').attr('class') == 'square blue') && ($('#24').attr('class') == 'square blue') && ($('#31').attr('class') == 'square blue') && ($('#38').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // Row 5
 else if (($('#4').attr('class') == 'square blue') && ($('#11').attr('class') == 'square blue') && ($('#18').attr('class') == 'square blue') && ($('#25').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#11').attr('class') == 'square blue') && ($('#18').attr('class') == 'square blue') && ($('#25').attr('class') == 'square blue') && ($('#32').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#18').attr('class') == 'square blue') && ($('#25').attr('class') == 'square blue') && ($('#32').attr('class') == 'square blue') && ($('#39').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // Row 6
 else if (($('#5').attr('class') == 'square blue') && ($('#12').attr('class') == 'square blue') && ($('#19').attr('class') == 'square blue') && ($('#26').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#12').attr('class') == 'square blue') && ($('#19').attr('class') == 'square blue') && ($('#26').attr('class') == 'square blue') && ($('#33').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#19').attr('class') == 'square blue') && ($('#26').attr('class') == 'square blue') && ($('#33').attr('class') == 'square blue') && ($('#40').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // Row 7
 else if (($('#6').attr('class') == 'square blue') && ($('#13').attr('class') == 'square blue') && ($('#20').attr('class') == 'square blue') && ($('#27').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#13').attr('class') == 'square blue') && ($('#20').attr('class') == 'square blue') && ($('#27').attr('class') == 'square blue') && ($('#34').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 } else if (($('#20').attr('class') == 'square blue') && ($('#27').attr('class') == 'square blue') && ($('#34').attr('class') == 'square blue') && ($('#41').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // Start Columns
 // Column 1
 else if (($('#0').attr('class') == 'square blue') && ($('#1').attr('class') == 'square blue') && ($('#2').attr('class') == 'square blue') && ($('#3').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#1').attr('class') == 'square blue') && ($('#2').attr('class') == 'square blue') && ($('#3').attr('class') == 'square blue') && ($('#4').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#2').attr('class') == 'square blue') && ($('#3').attr('class') == 'square blue') && ($('#4').attr('class') == 'square blue') && ($('#5').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#3').attr('class') == 'square blue') && ($('#4').attr('class') == 'square blue') && ($('#5').attr('class') == 'square blue') && ($('#6').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // Column 2
 else if (($('#7').attr('class') == 'square blue') && ($('#8').attr('class') == 'square blue') && ($('#9').attr('class') == 'square blue') && ($('#10').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#8').attr('class') == 'square blue') && ($('#9').attr('class') == 'square blue') && ($('#10').attr('class') == 'square blue') && ($('#11').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#9').attr('class') == 'square blue') && ($('#10').attr('class') == 'square blue') && ($('#11').attr('class') == 'square blue') && ($('#12').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#10').attr('class') == 'square blue') && ($('#10').attr('class') == 'square blue') && ($('#10').attr('class') == 'square blue') && ($('#10').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // Column 3
 else if (($('#14').attr('class') == 'square blue') && ($('#15').attr('class') == 'square blue') && ($('#16').attr('class') == 'square blue') && ($('#17').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#15').attr('class') == 'square blue') && ($('#16').attr('class') == 'square blue') && ($('#17').attr('class') == 'square blue') && ($('#18').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#16').attr('class') == 'square blue') && ($('#17').attr('class') == 'square blue') && ($('#18').attr('class') == 'square blue') && ($('#19').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#17').attr('class') == 'square blue') && ($('#18').attr('class') == 'square blue') && ($('#19').attr('class') == 'square blue') && ($('#20').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // Column 4
 else if (($('#21').attr('class') == 'square blue') && ($('#22').attr('class') == 'square blue') && ($('#23').attr('class') == 'square blue') && ($('#24').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#22').attr('class') == 'square blue') && ($('#23').attr('class') == 'square blue') && ($('#24').attr('class') == 'square blue') && ($('#25').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#23').attr('class') == 'square blue') && ($('#24').attr('class') == 'square blue') && ($('#25').attr('class') == 'square blue') && ($('#26').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#24').attr('class') == 'square blue') && ($('#25').attr('class') == 'square blue') && ($('#26').attr('class') == 'square blue') && ($('#27').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // Column 5
 else if (($('#28').attr('class') == 'square blue') && ($('#29').attr('class') == 'square blue') && ($('#30').attr('class') == 'square blue') && ($('#31').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#29').attr('class') == 'square blue') && ($('#30').attr('class') == 'square blue') && ($('#31').attr('class') == 'square blue') && ($('#32').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#30').attr('class') == 'square blue') && ($('#31').attr('class') == 'square blue') && ($('#32').attr('class') == 'square blue') && ($('#33').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#31').attr('class') == 'square blue') && ($('#32').attr('class') == 'square blue') && ($('#33').attr('class') == 'square blue') && ($('#34').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // Column 6
 else if (($('#35').attr('class') == 'square blue') && ($('#36').attr('class') == 'square blue') && ($('#37').attr('class') == 'square blue') && ($('#38').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#36').attr('class') == 'square blue') && ($('#37').attr('class') == 'square blue') && ($('#38').attr('class') == 'square blue') && ($('#39').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#37').attr('class') == 'square blue') && ($('#38').attr('class') == 'square blue') && ($('#39').attr('class') == 'square blue') && ($('#40').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#38').attr('class') == 'square blue') && ($('#39').attr('class') == 'square blue') && ($('#40').attr('class') == 'square blue') && ($('#41').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // diagonal row 6
 else if (($('#20').attr('class') == 'square blue') && ($('#26').attr('class') == 'square blue') && ($('#32').attr('class') == 'square blue') && ($('#38').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#13').attr('class') == 'square blue') && ($('#19').attr('class') == 'square blue') && ($('#25').attr('class') == 'square blue') && ($('#31').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#6').attr('class') == 'square blue') && ($('#12').attr('class') == 'square blue') && ($('#18').attr('class') == 'square blue') && ($('#24').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#41').attr('class') == 'square blue') && ($('#33').attr('class') == 'square blue') && ($('#25').attr('class') == 'square blue') && ($('#17').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#34').attr('class') == 'square blue') && ($('#26').attr('class') == 'square blue') && ($('#18').attr('class') == 'square blue') && ($('#10').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#27').attr('class') == 'square blue') && ($('#19').attr('class') == 'square blue') && ($('#11').attr('class') == 'square blue') && ($('#3').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // diagonal row 5
 else if (($('#19').attr('class') == 'square blue') && ($('#25').attr('class') == 'square blue') && ($('#31').attr('class') == 'square blue') && ($('#37').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#12').attr('class') == 'square blue') && ($('#18').attr('class') == 'square blue') && ($('#24').attr('class') == 'square blue') && ($('#30').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#5').attr('class') == 'square blue') && ($('#11').attr('class') == 'square blue') && ($('#17').attr('class') == 'square blue') && ($('#23').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#40').attr('class') == 'square blue') && ($('#32').attr('class') == 'square blue') && ($('#24').attr('class') == 'square blue') && ($('#16').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#33').attr('class') == 'square blue') && ($('#25').attr('class') == 'square blue') && ($('#17').attr('class') == 'square blue') && ($('#9').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#26').attr('class') == 'square blue') && ($('#18').attr('class') == 'square blue') && ($('#10').attr('class') == 'square blue') && ($('#2').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // diagonal row 4
 else if (($('#18').attr('class') == 'square blue') && ($('#24').attr('class') == 'square blue') && ($('#30').attr('class') == 'square blue') && ($('#36').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#11').attr('class') == 'square blue') && ($('#17').attr('class') == 'square blue') && ($('#23').attr('class') == 'square blue') && ($('#29').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#4').attr('class') == 'square blue') && ($('#10').attr('class') == 'square blue') && ($('#16').attr('class') == 'square blue') && ($('#22').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#38').attr('class') == 'square blue') && ($('#30').attr('class') == 'square blue') && ($('#22').attr('class') == 'square blue') && ($('#15').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#32').attr('class') == 'square blue') && ($('#24').attr('class') == 'square blue') && ($('#16').attr('class') == 'square blue') && ($('#8').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#25').attr('class') == 'square blue') && ($('#17').attr('class') == 'square blue') && ($('#9').attr('class') == 'square blue') && ($('#1').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 // diagonal row 3
 else if (($('#17').attr('class') == 'square blue') && ($('#23').attr('class') == 'square blue') && ($('#29').attr('class') == 'square blue') && ($('#35').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#10').attr('class') == 'square blue') && ($('#16').attr('class') == 'square blue') && ($('#22').attr('class') == 'square blue') && ($('#28').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#3').attr('class') == 'square blue') && ($('#9').attr('class') == 'square blue') && ($('#15').attr('class') == 'square blue') && ($('#21').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#37').attr('class') == 'square blue') && ($('#29').attr('class') == 'square blue') && ($('#21').attr('class') == 'square blue') && ($('#14').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#31').attr('class') == 'square blue') && ($('#23').attr('class') == 'square blue') && ($('#15').attr('class') == 'square blue') && ($('#7').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 else if (($('#24').attr('class') == 'square blue') && ($('#16').attr('class') == 'square blue') && ($('#8').attr('class') == 'square blue') && ($('#0').attr('class') == 'square blue')){
-$submessage.text('Blue wins!');
+$submessage.text('Blue wins! Grab a beer to play again!');
 blueWins.push('x');
 }
 
