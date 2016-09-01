@@ -1,4 +1,4 @@
-# Paradise Connect 4
+# Paradise Connect Four
 
 ### Javascript-based, turn based strategy game, styled in a laid-back, relaxing way.
 
