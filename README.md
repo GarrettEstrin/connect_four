@@ -10,7 +10,7 @@ All visual and audio elements are designed and implemented to promote relaxation
 
 ### Controls
 
-Users control is entirely click based.  Each player will click the column they want to place their token in when it is there turn, as indicated in the message center.
+Users control is entirely click based.  Each player will click the column they want to place their token in when it is their turn, as indicated in the message center.
 
 ## To Play
 
