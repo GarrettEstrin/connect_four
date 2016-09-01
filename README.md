@@ -20,6 +20,8 @@ Technologies used: HTML / CSS / Javascript + jQuery
 
 Columns are set to listen for clicks, at which time, an evaluation will be run to decide what row the token should be placed.  After a token is placed, a function to see if a player has met requirements to win has been achieved yet.  If one has, the message center indicates the winner and welcomes players to play again.  A lifetime score board is styled to the right of the board to indicate how many games each player has won.
 
+![Mockup of layout](./sample_image2.png)
+
 ## User Stories
 
 As a user, I interact with the game with a visually pleasing and simple UI.
