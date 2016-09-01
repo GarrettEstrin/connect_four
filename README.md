@@ -30,7 +30,7 @@ As a user, I can pick up and play a simple game that is relaxing to play.
 ## Future implementations
 
 Animations
-Fix turns after reset
+
 
 ## Feature Wish List
 
