@@ -1,11 +1,17 @@
 /* Custom CSS by Garrett Estrin | Garrett.Estrin.com */
 
+html {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.htmlBackground {
+    background-image: url('./island.jpg');
+}
+
 body {
   margin: -250px auto 0;
   width: 800px;
-  background-image: url('./island.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
   display: none;
 
 }
@@ -94,10 +100,12 @@ bottom: 858px;
 
 .red {
   background-color: red;
+  transition: all 1s;
 }
 
 .blue {
   background-color: blue;
+  transition: all 1s;
 }
 #audio {
   display: none;
@@ -165,4 +173,12 @@ color: red;
 }
 .hidden {
   display: none;
+}
+
+.pushUp {
+  bottom: 1000px;
+}
+
+.pushDown {
+  top: 1000px;
 }
