@@ -26,17 +26,14 @@ var $redScore = $('#redScore');
 var $blueScore = $('#blueScore');
 
 var showTurn = function(){
-  if($turn == false){
+  if($turn){
     $submessage.text('Go for it red player!')
   } else {$submessage.text("Blue player, you're up!")}
 };
 
 var resetGame = function(){
-  showTurn();
   $('.square').removeClass('red blue');
-
   showTurn();
-
 }
 
 var redWinFunc = function(){
@@ -81,6 +78,9 @@ var addScoreBlue = function(){
 
 // Winning Logic
 var isThereAWinner = function(){
+  if ($turn){
+    $turn = false;
+  } else {$turn = true;};
   snd.play();
   showTurn();
   if(($('#0').attr('class') == 'square red') && ($('#7').attr('class') == 'square red') && ($('#14').attr('class') == 'square red') && ($('#21').attr('class') == 'square red')){
@@ -507,7 +507,6 @@ blueWinFunc();
 
 
 $column1.on('click', function(){
-  ;
   if ($turn){
     // if red turn
     if($('#6').attr('class') == 'square'){
