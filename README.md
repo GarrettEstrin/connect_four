@@ -4,7 +4,7 @@
 
 A two player, semi-competitive strategy game where you attempt to drop four of your colored tokens in a line, either horizontally, vertically or diagonally.
 
-![Sample of gameplay](./sample_image.tiff) fix this
+![Sample of gameplay](./sample_image.png)
 
 ### Controls
 
