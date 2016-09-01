@@ -25,6 +25,7 @@ var showTurn = function(){
 var resetGame = function(){
   showTurn();
   $('.square').removeClass('red blue');
+
   showTurn();
 
 }

@@ -2,21 +2,20 @@
 
 body {
   margin: 0 auto;
-  /*width: 800px;*/
+  width: 800px;
   background-image: url('./island.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
 }
 
 .message {
-  width: 800px;
   height: 100px;
   font-size: 80px;
   text-align: center;
   display: inline-block;
   border: dashed 5px lightblue;
-  margin: 10px auto 40px;
+  margin: 10px 0 0 30px;
   text-shadow: 10px;
   /*color: lightyellow;*/
   -webkit-text-stroke: 1px white;
@@ -27,7 +26,7 @@ body {
 .messageleft {
   width: 300px;
   height: 500px;
-  background-color: white;
+  background-color: blue;
 }
 
 #board {
@@ -47,6 +46,8 @@ background-color: transparent;;
 height: 300px;
 width: 100%;
 clear: both;
+position: relative;
+bottom: 858px;
 }
 
 .row {
@@ -92,11 +93,37 @@ clear: both;
   margin-bottom: 20px;
 }
 
-/*.scoreboard {
+.scoreboard {
   width: 400px;
   height:800px;
   background-image: url('./sign.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}*/
+  float: right;
+  display: inline-block;
+  margin: 30px auto;
+  position: relative;
+  bottom: 710px;
+  left: 450px;
+}
+
+.playerscore {
+  font-size: 30px;
+  color: black;
+  width: 196px;
+  display:inline-block;
+  text-align: center;
+  padding-top: 10px;
+  -webkit-text-stroke: 1px white;
+}
+
+#blueScore {
+  font-size: 50px;
+  margin: 15px;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}

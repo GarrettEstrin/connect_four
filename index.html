@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 
   </head>
-  <body>
+  <body class="stop-scrolling">
     <div class="message">Paradise Connect Four<br>
     <p id="submessage">Red player goes first
     </p></div>
@@ -81,13 +81,23 @@
       <div class="square" id="40"></div>
       <div class="square" id="41"></div>
       </div>
-      <!-- column 7 -->
+        </div> <!-- End Game Board -->
+      <div class="scoreboard">
+        <div class="playerscore">
+          <p>blue player</p>
+          <p id="blueScore"></p>
+        </div>
+        <div class="playerscore">
+          <p>red player</p>
+          <p id="redScore"></p>
+        </div>
+
+      </div>
 
 
-    </div> <!-- End Game Board -->
     <!-- Base Element -->
     <div class="base"></div>
-    <div class="scoreboard"></div>
+
     <audio controls autoplay loop id="audio">
       <source src="./sound.mp3" type="audio/mp3">
     </audio>
