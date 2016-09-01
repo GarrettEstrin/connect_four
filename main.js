@@ -24,6 +24,21 @@ var blueWins = [];
 // Variable to select score areas
 var $redScore = $('#redScore');
 var $blueScore = $('#blueScore');
+// Variable to select instructions
+var $instructions = $('.instructions')
+
+$instructions.on('click', function(){
+$(this).slideUp(1000);
+// fixBodyMargin();
+})
+
+$message.on('click', function(){
+  $instructions.slideDown(1000);
+})
+
+var fixBodyMargin = function(){
+  $('body').delay(2000).toggleClass('fixbodymargin');
+}
 
 var showTurn = function(){
   if($turn){

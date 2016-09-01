@@ -1,12 +1,16 @@
 /* Custom CSS by Garrett Estrin | Garrett.Estrin.com */
 
 body {
-  margin: -260px auto 0;
+  margin: -250px auto 0;
   width: 800px;
   background-image: url('./island.jpg');
   background-repeat: no-repeat;
   background-size: contain;
 
+}
+
+.fixbodymargin {
+    margin: -250px auto 0;
 }
 
 .message {
@@ -142,4 +146,22 @@ color: red;
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
+}
+
+.instructions {
+  width: 500px;
+  height: 200px;
+  border: solid 5px lightgrey;
+  background-color: white;
+  color: grey;
+  position: absolute;
+  top: 400px;
+  left: 150px;
+  margin: 0 auto;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+
+}
+.hidden {
+  display: none;
 }
