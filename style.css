@@ -45,6 +45,7 @@ body {
   background-color: transparent;
   border: solid yellow 10px;
   margin: 10px auto 0;
+  border-radius: 10%;
 
 }
 
@@ -119,18 +120,18 @@ bottom: 858px;
 }
 
 .playerscore {
-  font-size: 30px;
+  font-size: 60px;
   color: black;
   width: 196px;
   display:inline-block;
   text-align: center;
-  padding-top: 10px;
   -webkit-text-stroke: 1px white;
+  margin-top: -25px;
 }
 
 #blueScore {
   font-size: 50px;
-  margin: 15px;
+  margin: 0 15px 10px 15px;
 }
 
 .stop-scrolling {
