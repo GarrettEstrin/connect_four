@@ -6,6 +6,7 @@ body {
   background-image: url('./island.jpg');
   background-repeat: no-repeat;
   background-size: contain;
+  display: none;
 
 }
 
