@@ -1,5 +1,6 @@
 // Custom JavaScript by Garrett Estrin | GarrettEstrin.com
 
+// Game object
 var game = {};
 // Fades in all body elements
 $('body').fadeIn(2000);
@@ -24,11 +25,11 @@ game.celebrate = new Audio("./celebration.mp3");
 // Variable to select submessage area
 game.submessage = $('#submessage');
 // Arrays to hold player wins after each game
-var redWins = [];
-var blueWins = [];
+game.redWins = [];
+game.blueWins = [];
 // Variable to select score areas
-var $redScore = $('#redScore');
-var $blueScore = $('#blueScore');
+game.redScore = $('#redScore');
+game.blueScore = $('#blueScore');
 // Variable to select instructions
 game.instructions = $('.instructions')
 
@@ -54,7 +55,7 @@ var resetGame = function(){
 // Functions to run when red or blue gets a match
 var redWinFunc = function(){
   game.submessage.text('Red wins! Grab a beer to play again!');
-  redWins.push('x');
+  game.redWins.push('x');
   addScoreRed();
   game.bottle.on('click', function(){
   game.celebrate.play();
@@ -65,7 +66,7 @@ var redWinFunc = function(){
 
 var blueWinFunc = function(){
   game.submessage.text('Blue wins! Grab a beer to play again!');
-  blueWins.push('x');
+  game.blueWins.push('x');
   addScoreBlue();
   game.bottle.on('click', function(){
   game.celebrate.play();
@@ -76,16 +77,16 @@ var blueWinFunc = function(){
 
 // Functions to add score to scoreboard
 var addScoreRed = function(){
-    $redScore.text('');
-  for(var i = 0; i < redWins.length; i++){
-    $redScore.append('X');
+    game.redScore.text('');
+  for(var i = 0; i < game.redWins.length; i++){
+    game.redScore.append('X');
   }
 }
 
 var addScoreBlue = function(){
-   $blueScore.text('');
-  for(var i = 0; i < blueWins.length; i++){
-    $blueScore.append('X');
+   game.blueScore.text('');
+  for(var i = 0; i < game.blueWins.length; i++){
+    game.blueScore.append('X');
   }
 }
 
