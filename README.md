@@ -32,7 +32,7 @@ As a user, I can pick up and play a simple game that is relaxing to play.
 
 ## Future implementations
 
-Make code DRY - logic.
+Make code DRY - implement new logic.
 
 ## Feature Wish List
 
