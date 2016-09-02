@@ -11,10 +11,12 @@
 
   </head>
   <body class="stop-scrolling">
+    <!-- Instructions Pop-up -->
     <div class="instructions">
       <h2>Welcome to Paradise!</h2>
       <p>Feeling stressed?  This is the perfect way to relax!  Grab a friend and try to get four of your tokens in a line, either vertically, horizontally or diagonally.  Click the column you want to place your token on your turn.  First to four wins!</p>
     </div>
+    <!-- Message Area -->
     <div class="message">Paradise Connect Four<br>
     <p id="submessage">Red player goes first
     </p></div>
@@ -85,7 +87,9 @@
       <div class="square" id="40"></div>
       <div class="square" id="41"></div>
       </div>
-        </div> <!-- End Game Board -->
+        </div>
+        <!-- End Game Board -->
+        <!-- Gameboard -->
       <div class="scoreboard">
         <div class="playerscore">
           <p></p>
@@ -97,17 +101,18 @@
         </div>
 
       </div>
+      <!-- Reset button area -->
       <div class="messageLeft"></div>
 
     <!-- Base Element -->
     <div class="base"></div>
-
+    <!-- Background music -->
     <audio controls autoplay loop id="audio">
       <source src="./sound.mp3" type="audio/mp3">
     </audio>
 
 
-
+    <!-- Javascript  -->
     <script src="./main.js" charset="utf-8"></script>
   </body>
 </html>

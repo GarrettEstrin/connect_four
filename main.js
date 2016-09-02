@@ -39,22 +39,18 @@ $(this).slideUp(1000);
 $message.on('click', function(){
   $instructions.slideDown(1000);
 })
-
-var fixBodyMargin = function(){
-  $('body').delay(2000).toggleClass('fixbodymargin');
-}
-
+// Functions to run after each turn
 var showTurn = function(){
   if($turn){
     $submessage.text('Go for it red player!')
   } else {$submessage.text("Blue player, you're up!")}
 };
-
+// Function to reset game without reloading
 var resetGame = function(){
   $('.square').removeClass('red blue');
   showTurn();
 }
-
+// Functions to run when red or blue gets a match
 var redWinFunc = function(){
   $submessage.text('Red wins! Grab a beer to play again!');
   redWins.push('x');
@@ -77,7 +73,7 @@ var blueWinFunc = function(){
 })
 }
 
-// Function to add score to scoreboard
+// Functions to add score to scoreboard
 var addScoreRed = function(){
     $redScore.text('');
   for(var i = 0; i < redWins.length; i++){
@@ -95,7 +91,9 @@ var addScoreBlue = function(){
 
 
 
-// Winning Logic
+// Winning Logic - really long - skip to line 523 -
+// checks all possible winnings combinations
+// split up by color based on whos turn it is
 var isThereAWinner = function(){
   if ($turn){
     $turn = false;
@@ -524,7 +522,9 @@ blueWinFunc();
 
 }
 
-
+// Functions to place tokens when colomn is clicked
+// split up by column
+// Skip to line 964
 $column1.on('click', function(){
   if ($turn){
     // if red turn
