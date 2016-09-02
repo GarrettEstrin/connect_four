@@ -1,4 +1,5 @@
 // Custom JavaScript by Garrett Estrin | GarrettEstrin.com
+
 // Fades in all body elements
 $('body').fadeIn(2000);
 $turn = true;
@@ -33,7 +34,6 @@ var $instructions = $('.instructions')
 // To make instructions disappear and re-appear
 $instructions.on('click', function(){
 $(this).slideUp(1000);
-// fixBodyMargin();
 })
 
 $message.on('click', function(){
