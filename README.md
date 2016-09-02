@@ -27,6 +27,7 @@ Columns are set to listen for clicks, at which time, an evaluation will be run t
 ## User Stories
 
 As a user, I interact with the game with a visually pleasing and simple UI.
+
 As a user, I can pick up and play a simple game that is relaxing to play.
 
 ## Future implementations
